@@ -1,6 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cell {
 	private final int xPosition;
 	private final int yPosition;
+	private List<Cell> neighboringCells=new ArrayList<>();
 	private int value;
 
 	public Cell(int xPosition, int yPosition, int value) {
@@ -20,40 +24,31 @@ public class Cell {
 	public boolean isAlive() {
 		return this.value == 1;
 	}
-	public boolean underPopulation(Cell[][] cells, Cell[][] futureCells, int row, int column, int aliveNeighbors) {
-		if ((cells[row][column].isAlive()) && (aliveNeighbors < 2)) {
-			futureCells[row][column].setValue(0);
-			return true;
-		}
-		return false;
 
+	public boolean isCellAliveForNextGeneration() {
+		long count = neighboringCells.stream().filter(Cell::isAlive).count();
+		return !isAlive() && count == 3;
+	}
+	public boolean isCellDiedDueToUnderPopulation(){
+		long count = neighboringCells.stream().filter(Cell::isAlive).count();
+		return isAlive() && count < 2;
+	}
+	public boolean isCellDiedToOverPopulation(){
+		long count = neighboringCells.stream().filter(Cell::isAlive).count();
+		if(value==1) {
+			count=count-1;
+		}
+		return isAlive() && count > 3;
 	}
 
-	public boolean reproduction(Cell[][] cells, Cell[][] futureCells,int row, int column, int aliveNeighbors) {
-		if ((!cells[row][column].isAlive()) && (aliveNeighbors == 3)) {
-			futureCells[row][column].setValue(1);
-			return true;
+	public void aliveNeighborsCount(Cell[][] grid) {
+		for (int i = xPosition - 1; i <= xPosition + 1; i++) {
+			for (int j = yPosition - 1; j <= yPosition + 1; j++) {
+				if ((i != -1) && (j != -1) && (j < grid[0].length) && (i < grid.length)) {
+					neighboringCells.add(new Cell(i, j, grid[i][j].getValue()));
+				}
+			}
 		}
-		futureCells[row][column].setValue(cells[row][column].getValue());
-		return false;
 
-	}
-
-	public boolean overPopulation(Cell[][] cells, Cell[][] futureCells, int row, int column, int aliveNeighbors) {
-		if ((cells[row][column].isAlive()) && (aliveNeighbors > 3)) {
-			futureCells[row][column].setValue(0);
-			return true;
-		}
-		return false;
-
-	}
-	public int aliveNeighbors(Cell[][] grid, int row, int column) {
-		int aliveNeighbours = 0;
-		for (int i = -1; i <= 1; i++)
-			for (int j = -1; j <= 1; j++)
-				if ((row + i >= 0 && row + i < grid.length) && (column + j >= 0 && column + j < grid[0].length))
-					aliveNeighbours += grid[row + i][column + j].getValue();
-		aliveNeighbours -= grid[row][column].getValue();
-		return aliveNeighbours;
 	}
 }

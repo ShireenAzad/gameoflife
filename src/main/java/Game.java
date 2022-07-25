@@ -11,8 +11,6 @@ public class Game {
 		this.columns = columns;
 	}
 
-
-
 	public Cell[][][] generateCells() {
 		cells = new Cell[this.rows][this.columns];
 		futureCells = new Cell[this.rows][this.columns];
@@ -32,9 +30,6 @@ public class Game {
 		return cellValues[position];
 
 	}
-
-
-
 
 
 }

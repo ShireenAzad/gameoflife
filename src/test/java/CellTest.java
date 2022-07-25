@@ -36,20 +36,23 @@ public class CellTest {
 	}
 	@Test
 	void checkingCellDiesDueToUnderPopulation() {
-		boolean b = cells[4][3].underPopulation(cells, futureCells, 4, 3, 1);
-		assertTrue(b);
+		cells[4][3].aliveNeighborsCount(cells);
+		boolean cellDiedDueToUnderPopulation = cells[4][3].isCellDiedDueToUnderPopulation();
+		assertFalse(cellDiedDueToUnderPopulation);
 	}
 	@Test
-	void checkingIsAnyNeighborAlive() {
-		int aliveNeighbors = cells[1][1].aliveNeighbors(cells, 1, 1);
-		assertEquals(aliveNeighbors,6);
+	void IsCellGeneratesForNextGeneration() {
+		 cells[1][1].aliveNeighborsCount(cells);
+		boolean cellAliveForNextGeneration = cells[1][1].isCellAliveForNextGeneration();
+		assertFalse(cellAliveForNextGeneration);
 
 	}
 
 	@Test
 	void checkingCellDiesDueToOverPopulation() {
-		boolean b = cells[0][1].overPopulation(cells, futureCells, 0, 1, 4);
-		assertTrue(b);
+		cells[0][1].aliveNeighborsCount(cells);
+		boolean cellDiedToOverPopulation = cells[0][1].isCellDiedToOverPopulation();
+		assertTrue(cellDiedToOverPopulation);
 	}
 
 }

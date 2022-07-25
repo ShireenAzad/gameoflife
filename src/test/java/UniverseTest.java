@@ -31,10 +31,14 @@ public class UniverseTest {
 		Cell[][] cells = universe.playGame();
 		int[][] futureCells = {{1,0,1,0,0},{1,0,0,1,0},{0,0,0,1,0},{1,0,0,0,0},{0,1,0,1,0}};
 		int[][] resultCells=new int[5][5];
-		for(int i=0;i<cells.length;i++)
-			for(int j=0;j<cells[0].length;j++) {
+		for(int i=0;i<cells.length;i++) {
+			for (int j = 0; j < cells[0].length; j++) {
 				resultCells[i][j] = cells[i][j].getValue();
+				System.out.print(cells[i][j].getValue());
 			}
+			System.out.println();
+		}
+
 		assertTrue(Arrays.deepEquals(resultCells,futureCells));
 
 	}
