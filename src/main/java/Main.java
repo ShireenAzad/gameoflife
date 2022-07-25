@@ -4,7 +4,7 @@ public class Main {
 		int M = 5, N = 5;
 
 		// Initializing the grid.
-		int[][] grid = {{0, 1, 1, 0, 0}, {1, 1, 1, 0, 0}, {0, 1, 1, 0, 0}, {0, 1, 1, 0, 0}, {0, 1, 1, 1, 0}
+		int[][] grid = {{0, 1, 1, 0, 1}, {1, 1, 1, 0, 1}, {0, 1, 1, 0, 1}, {0, 1, 1, 0, 1}, {0, 1, 1, 1, 1}
 		};
 
 		// Displaying the grid
