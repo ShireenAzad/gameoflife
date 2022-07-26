@@ -26,9 +26,11 @@ public class Cell {
 	}
 
 	public boolean isCellAliveForNextGeneration() {
-		long count = neighbors.stream().filter(Cell::isAlive).count();
-		if (value == 1) count = count - 1;
-		return (!isAlive() || count >= 2) && (!isAlive() || count <= 3) && (!isAlive() && count == 3 || value == 1);
+		long aliveNeighbors = neighbors.stream().filter(Cell::isAlive).count();
+		if (value == 1) aliveNeighbors = aliveNeighbors - 1;
+		return (!isAlive() || aliveNeighbors >= 2) &&
+				(!isAlive() || aliveNeighbors <= 3) &&
+				(!isAlive() && aliveNeighbors == 3 || value == 1);
 
 	}
 
