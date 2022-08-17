@@ -1,0 +1,27 @@
+GCell{coordinates=Coordinates{xPosition=0, yPosition=0}, isAlive=false}
+FCell{coordinates=Coordinates{xPosition=0, yPosition=1}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=0, yPosition=2}, isAlive=true}
+GCell{coordinates=Coordinates{xPosition=0, yPosition=3}, isAlive=false}
+FCell{coordinates=Coordinates{xPosition=0, yPosition=4}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=1, yPosition=0}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=1, yPosition=1}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=1, yPosition=2}, isAlive=true}
+GCell{coordinates=Coordinates{xPosition=1, yPosition=3}, isAlive=false}
+FCell{coordinates=Coordinates{xPosition=1, yPosition=4}, isAlive=true}
+GCell{coordinates=Coordinates{xPosition=2, yPosition=0}, isAlive=false}
+FCell{coordinates=Coordinates{xPosition=2, yPosition=1}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=2, yPosition=2}, isAlive=true}
+GCell{coordinates=Coordinates{xPosition=2, yPosition=3}, isAlive=false}
+FCell{coordinates=Coordinates{xPosition=2, yPosition=4}, isAlive=true}
+GCell{coordinates=Coordinates{xPosition=3, yPosition=0}, isAlive=false}
+FCell{coordinates=Coordinates{xPosition=3, yPosition=1}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=3, yPosition=2}, isAlive=true}
+GCell{coordinates=Coordinates{xPosition=3, yPosition=3}, isAlive=false}
+FCell{coordinates=Coordinates{xPosition=3, yPosition=4}, isAlive=true}
+GCell{coordinates=Coordinates{xPosition=4, yPosition=0}, isAlive=false}
+FCell{coordinates=Coordinates{xPosition=4, yPosition=1}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=4, yPosition=2}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=4, yPosition=3}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=4, yPosition=4}, isAlive=true}
+FCell{coordinates=Coordinates{xPosition=0, yPosition=1}, isAlive=true}
+å[Cell{coordinates=Coordinates{xPosition=0, yPosition=0}, isAlive=false}, Cell{coordinates=Coordinates{xPosition=0, yPosition=2}, isAlive=true}, Cell{coordinates=Coordinates{xPosition=1, yPosition=0}, isAlive=true}, Cell{coordinates=Coordinates{xPosition=1, yPosition=1}, isAlive=true}, Cell{coordinates=Coordinates{xPosition=1, yPosition=2}, isAlive=true}]

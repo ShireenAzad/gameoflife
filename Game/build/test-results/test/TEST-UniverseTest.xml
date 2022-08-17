@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UniverseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-01T05:20:31" hostname="Shireens-MacBook-Air.local" time="3.022">
+  <properties/>
+  <testcase name="nextGeneration()" classname="UniverseTest" time="3.017"/>
+  <testcase name="checkingAliveNeighbors()" classname="UniverseTest" time="0.004"/>
+  <system-out><![CDATA[Cell{coordinates=Coordinates{xPosition=0, yPosition=0}, isAlive=false}
+Cell{coordinates=Coordinates{xPosition=0, yPosition=1}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=0, yPosition=2}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=0, yPosition=3}, isAlive=false}
+Cell{coordinates=Coordinates{xPosition=0, yPosition=4}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=1, yPosition=0}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=1, yPosition=1}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=1, yPosition=2}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=1, yPosition=3}, isAlive=false}
+Cell{coordinates=Coordinates{xPosition=1, yPosition=4}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=2, yPosition=0}, isAlive=false}
+Cell{coordinates=Coordinates{xPosition=2, yPosition=1}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=2, yPosition=2}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=2, yPosition=3}, isAlive=false}
+Cell{coordinates=Coordinates{xPosition=2, yPosition=4}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=3, yPosition=0}, isAlive=false}
+Cell{coordinates=Coordinates{xPosition=3, yPosition=1}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=3, yPosition=2}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=3, yPosition=3}, isAlive=false}
+Cell{coordinates=Coordinates{xPosition=3, yPosition=4}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=4, yPosition=0}, isAlive=false}
+Cell{coordinates=Coordinates{xPosition=4, yPosition=1}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=4, yPosition=2}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=4, yPosition=3}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=4, yPosition=4}, isAlive=true}
+Cell{coordinates=Coordinates{xPosition=0, yPosition=1}, isAlive=true}
+[Cell{coordinates=Coordinates{xPosition=0, yPosition=0}, isAlive=false}, Cell{coordinates=Coordinates{xPosition=0, yPosition=2}, isAlive=true}, Cell{coordinates=Coordinates{xPosition=1, yPosition=0}, isAlive=true}, Cell{coordinates=Coordinates{xPosition=1, yPosition=1}, isAlive=true}, Cell{coordinates=Coordinates{xPosition=1, yPosition=2}, isAlive=true}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

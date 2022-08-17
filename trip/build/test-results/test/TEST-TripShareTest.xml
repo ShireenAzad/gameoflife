@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TripShareTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-15T13:15:35" hostname="Shireens-MacBook-Air.local" time="0.101">
+  <properties/>
+  <testcase name="dueAmount()" classname="TripShareTest" time="0.101"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
