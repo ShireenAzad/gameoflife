@@ -37,8 +37,9 @@ public class Cell {
 	public void neighbors(Cell[][] grid) {
 		for (int i = xPosition - 1; i <= xPosition + 1; i++)
 			for (int j = yPosition - 1; j <= yPosition + 1; j++)
-				if ((i != -1) && (j != -1) && (j < grid[0].length) && (i < grid.length))
+				if ((i != -1) && (j != -1)) {
 					neighbors.add(new Cell(i, j, grid[i][j].getValue()));
+				}
 
 	}
 }
